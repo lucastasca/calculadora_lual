@@ -1,0 +1,48 @@
+CREATE DATABASE `sntflori_abril` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+CREATE TABLE `dia` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `valor` decimal(5,2) DEFAULT NULL,
+  `metodo` varchar(20) DEFAULT NULL,
+  `lanche` smallint(6) DEFAULT NULL,
+  `suco` smallint(6) DEFAULT NULL,
+  `prom` smallint(6) DEFAULT NULL,
+  `batata` int(11) DEFAULT NULL,
+  `acai` smallint(6) DEFAULT NULL,
+  `sopa` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `mesa` (
+  `numero_mesa` char(8) NOT NULL,
+  `estado_mesa` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `pedido` (
+  `id` int(11) NOT NULL,
+  `descricao` varchar(30) DEFAULT NULL,
+  `valor` decimal(5,2) DEFAULT NULL,
+  `lanche` smallint(6) DEFAULT NULL,
+  `suco` smallint(6) DEFAULT NULL,
+  `prom` smallint(6) DEFAULT NULL,
+  `batata` int(11) DEFAULT NULL,
+  `acai` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+criar do mesa01 ao mesa12
+CREATE TABLE `mesa01` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(30) DEFAULT NULL,
+  `valor` decimal(5,2) DEFAULT NULL,
+  `lanche` smallint(6) DEFAULT NULL,
+  `suco` smallint(6) DEFAULT NULL,
+  `prom` smallint(6) DEFAULT NULL,
+  `batata` int(11) DEFAULT NULL,
+  `acai` smallint(6) DEFAULT NULL,
+  `sopa` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

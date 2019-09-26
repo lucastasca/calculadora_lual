@@ -1,0 +1,254 @@
+@font-face {
+     font-family: robotocondensed;
+     src: local(robotocondensed.ttf), url(robotocondensed.ttf);
+}
+
+body {
+    padding: 0 0;
+    margin: 0 0;
+    height: 100vh;
+    background-color: black;
+    color: gold;
+    font-family: 'Roboto Condensed';
+       
+    
+}
+
+a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    a:link, a:hover, a:active, a:visited {text-decoration: none}
+
+}
+
+h1 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.fill-div {
+text-align: center;
+display: block;
+height: 100%;
+width: 100%;
+text-decoration: none;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 180px auto auto;
+    grid-template-areas:    "B M"
+                            "B P"
+                            "B PP"
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    grid-column: 1/7;
+    width: auto;
+    height: 1em;
+    font-size: 1em;
+        
+}
+
+.titulopastel {
+    text-align: center;
+    color: white;
+    grid-column: 1/8;
+    width: auto;
+    height: 1em;
+    font-size: 1em;
+   
+}
+
+
+.botao_calculadora {
+    margin-top: 5px;
+}
+
+.botaocontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr ;
+    
+    
+}
+
+.botaocontainerpastel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr ;
+    
+    
+}
+
+
+
+.mesa-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    grid-gap: 5px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+    }
+.botao {
+    height: auto;
+    grid-area: B;
+    
+}
+
+.escolhamesa {
+    display: inline-block;
+    padding: 10px;
+    grid-area: M;
+    width: auto;
+}
+
+.pedido {
+    grid-area: P;
+}
+
+.pedido2 {
+    grid-area: PP;
+    align-self: end;
+    
+}
+.default-input {
+    font-size: 1em;
+    width:120px;
+    height:90px;
+}
+
+
+
+.button{
+    background: #f857a6;
+    background:-webkit-linear-gradient(to right,#742626,#c8104e);
+    background:linear-gradient(to right,#742626,#c8104e);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    width:100px;
+    height:65px;    
+    border-radius: 5px;
+    box-shadow: 0 10px 10px -2px rgba(0,0,0,.25);
+    -webkit-text-stroke-width: 0.3px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */
+	}
+
+     
+    .lanche{
+        background:linear-gradient(to right,#f12711,#f4791f);
+        color: white;
+	}
+	
+	.orange{
+     	background:linear-gradient(to right,#ff8008,#ffc837);
+        color: white;
+	}
+	
+	.darkblue{
+        background:linear-gradient(to right,#283848,#859398);
+        color: white;
+	}
+
+    .green{
+        background:linear-gradient(to right,#799f0c,#acbb78);
+        color: white;
+        }
+
+    .violet{
+        background:linear-gradient(to right,#8b23c6,#4543b5);
+        color: white;
+	}
+	
+	 .olive{
+        background:linear-gradient(to right,#e55d87,#5fc3e4);
+        color: white;
+	}
+	
+    
+}
+    .editar{
+    background:linear-gradient(to right,#005858,#0857a6);
+    padding: 5px;
+    width: 60px;
+    height: 20px;
+    margin: 0 auto;
+}
+            
+    .mesa {
+        padding: 5px;
+        width: 70px;
+        height: 30px;
+        margin: 0 auto;
+        background:linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+    .mesaocupada {
+        padding: 5px;
+        width: 70px;
+        height: 30px;
+        margin: 0 auto;
+        /* background:linear-gradient(to right,#ff5858,#f857a6); */
+        background:linear-gradient(to right, #d31027, #ea384d);
+}
+
+    .topo_pedido {
+        display: flex;
+        width: 300px;
+        margin-top: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .botao_pedido {
+        width: 25px;
+        border: none;
+        align-items: center;
+        margin: 0 ;
+    }
+    
+    .cel_espaco {
+        width:50px;
+    }
+    
+	.cel_id {
+	width: 25px;
+   	text-align: center;
+   	}
+   	
+   	.cel_valor {
+	width: 50px;
+   	text-align: center;
+   	}
+   	
+   	.cel_item {
+	width: 175px;
+   	text-align: left;
+   	}
+   	
+   	/*novo botao */
+.novo {
+    border: solid;
+    border-color: gold;
+    background-color: black;
+    border-radius: 5px;
+    color: gold;
+    font-size: 1em;
+    width: 100px;
+    height: 65px;
+    
+}
